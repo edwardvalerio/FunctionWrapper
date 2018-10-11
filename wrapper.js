@@ -17,10 +17,9 @@
     };
 
     AttachMe(window, "test", function(orginalFn) {
+
         var originalParams = Array.prototype.slice.call(arguments, 1);
-
         console.log(originalParams);
-
         var before = originalParams[0];
         var after = originalParams[1];
         before();
